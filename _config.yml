@@ -81,7 +81,14 @@ theme: edinburgh
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: rsync
+  host: blogelganger.com
+  user: ati
+  root: /var/www/svet.msk.ru
+  delete: true
+  verbose: true
+  ignore_errors: false
+
 
 menu:
   Купить: /blog/purchase/
